@@ -1,23 +1,16 @@
-import javax.swing.JFrame;
-import javax.swing.JTextArea;
- 
-public class MeuNote extends JFrame{
-  
-  private JTextArea texto = new JTextArea();
- 
-   public MeuNote(){
-     super("Meu Notepad");
-     this.montaJanela();
-   } 
- 
-   private void montaJanela(){
-      this.getContentPane().add(texto);
-   }
-    
+import java.util.ArrayList;
+import java.util.List;
+
+public class MeuNote{  
+      
      public static void main(String[] args){
-       //Cria objeto:
-       MeuNote janela = new MeuNote();
-       janela.setSize(640,480);
-       janela.setVisible(true);
-   }
+      List<String> nomes = new ArrayList<>();
+      nomes.add("Marcelo");
+      nomes.add("Rosana");
+      nomes.add("Fabio");
+      nomes.add("Michelle");
+      for (String nome : nomes) {
+        System.out.println(nome);
+      }
+    }
 }
